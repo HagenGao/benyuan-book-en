@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Benyuan: Rewriting the Foundation of the Economy ｜ HagenGao</title>
+<meta name="description" content="Why do we run harder every year and never get ahead? Housing, children, retirement, the next crisis — these pains may share one root. Benyuan: Rewriting the Foundation of the Economy. An independent work of economic theory. Free to download." />
+<meta property="og:title" content="Benyuan: Rewriting the Foundation of the Economy" />
+<meta property="og:description" content="What if money could go negative — and a whole economy still balanced to zero? An independent work of economic theory. Free to download." />
+<meta property="og:type" content="book" />
+<style>
+  :root{
+    --bg:#0f1115;
+    --bg-soft:#161922;
+    --ink:#e8e6e0;
+    --ink-dim:#9a9892;
+    --ink-faint:#6c6a64;
+    --amber:#d99a2b;
+    --amber-bright:#f0b950;
+    --gray-old:#5a5d66;
+    --line:#262a33;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:Georgia,"Times New Roman","Iowan Old Style",serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+  /* ---- hero ---- */
+  header{padding:88px 0 56px;border-bottom:1px solid var(--line)}
+  .eyebrow{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:13px;letter-spacing:.28em;color:var(--ink-faint);
+    text-transform:uppercase;margin-bottom:28px;
+  }
+  h1{
+    font-size:clamp(32px,6.6vw,52px);
+    font-weight:700;line-height:1.16;letter-spacing:.01em;
+    margin-bottom:18px;
+  }
+  h1 .sub{display:block;font-size:.5em;font-weight:400;color:var(--ink-dim);margin-top:14px;letter-spacing:.02em;font-style:italic}
+  .byline{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:15px;color:var(--ink-dim);margin-top:22px;letter-spacing:.02em;
+  }
+
+  /* ---- axis signature ---- */
+  .axis{margin:46px 0 8px;width:100%;height:130px;display:block}
+  .axis .zero{stroke:var(--ink-faint);stroke-width:1;stroke-dasharray:3 4}
+  .axis .curve{fill:none;stroke:var(--amber);stroke-width:2.5;stroke-linecap:round}
+  .axis .dot{fill:var(--amber-bright)}
+  .axis .lbl{fill:var(--ink-faint);font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.1em}
+  .axis-cap{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:13px;color:var(--ink-faint);text-align:center;letter-spacing:.04em;margin-bottom:8px;font-style:italic;
+  }
+
+  /* ---- lede ---- */
+  section{padding:48px 0;border-bottom:1px solid var(--line)}
+  .lede p{font-size:18px;color:var(--ink);margin-bottom:20px}
+  .lede p.q{font-size:23px;color:var(--amber-bright);font-weight:600;line-height:1.45}
+  .lede p:last-child{margin-bottom:0}
+  .lede em{color:var(--ink);font-style:italic}
+
+  /* ---- download ---- */
+  .dl{text-align:center;padding:56px 0}
+  .dl .meta{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:13px;color:var(--ink-faint);letter-spacing:.04em;margin-bottom:24px;
+  }
+  .btn{
+    display:inline-block;
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:17px;font-weight:600;letter-spacing:.03em;
+    color:#1a140a;background:var(--amber);
+    padding:16px 40px;border-radius:2px;text-decoration:none;
+    transition:background .18s ease,transform .18s ease;
+  }
+  .btn:hover{background:var(--amber-bright);transform:translateY(-1px)}
+  .btn:focus-visible{outline:2px solid var(--amber-bright);outline-offset:3px}
+  .dl .note{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:13px;color:var(--ink-faint);margin-top:18px;
+  }
+  .dl .ver{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:12px;color:var(--ink-faint);margin-top:10px;letter-spacing:.02em;
+  }
+  .dl .ver a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--line)}
+  .dl .ver a:hover{color:var(--ink)}
+
+  /* ---- spread the word ---- */
+  .spread{background:var(--bg-soft)}
+  .spread .wrap{padding-top:44px;padding-bottom:44px}
+  .spread h2{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:15px;font-weight:700;color:var(--amber-bright);letter-spacing:.04em;margin-bottom:16px;
+  }
+  .spread p{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:15px;color:var(--ink-dim);margin-bottom:14px;line-height:1.75}
+  .spread p:last-child{margin-bottom:0}
+  .spread strong{color:var(--ink)}
+
+  /* ---- thanks ---- */
+  .thanks .wrap{padding-top:44px;padding-bottom:44px}
+  .thanks h2{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:15px;font-weight:700;color:var(--ink-dim);letter-spacing:.04em;margin-bottom:16px;
+  }
+  .thanks p{font-size:16px;color:var(--ink-dim);margin-bottom:14px;line-height:1.8}
+  .thanks p:last-child{margin-bottom:0}
+
+  /* ---- license / footer ---- */
+  footer{padding:44px 0 80px}
+  footer .lic{
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:13.5px;color:var(--ink-faint);line-height:1.75;
+  }
+  footer .lic strong{color:var(--ink-dim)}
+  footer .contact{margin-top:20px;font-size:13.5px;color:var(--ink-faint);
+    font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.9}
+  footer a{color:var(--ink-dim);text-decoration:none;border-bottom:1px solid var(--line)}
+  footer a:hover{color:var(--ink)}
+
+  @media (prefers-reduced-motion:reduce){
+    .btn{transition:none}
+  }
+  @media (max-width:520px){
+    header{padding:60px 0 40px}
+    .lede p{font-size:17px}
+    .lede p.q{font-size:20px}
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">The Ark Plan · Economic Theory</div>
+      <h1>Benyuan
+        <span class="sub">Rewriting the Foundation of the Economy</span>
+      </h1>
+      <div class="byline">by HagenGao ｜ English Edition · free to read and share</div>
+
+      <!-- signature: a value line that dips below zero, then returns to zero -->
+      <svg class="axis" viewBox="0 0 700 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <line class="zero" x1="20" y1="55" x2="680" y2="55"/>
+        <text class="lbl" x="24" y="48">0</text>
+        <path class="curve" d="M20,55 C140,55 150,118 280,116 C420,114 430,55 560,40 C620,33 660,55 680,55"/>
+        <circle class="dot" cx="20" cy="55" r="4"/>
+        <circle class="dot" cx="680" cy="55" r="4"/>
+      </svg>
+      <div class="axis-cap">An account may sink below zero — but a life returns to zero in the end.</div>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div class="wrap">
+      <p class="q">Why do we run harder every year, and never seem to get ahead?</p>
+      <p>The house you can't afford. The kid you'd love to have but can't make the math work for. The retirement that keeps slipping away. The crisis that can empty your savings overnight. These pains look unrelated. This book argues they share one root.</p>
+      <p>For centuries, one assumption has been inherited by everyone and questioned by no one: that <em>money must always be positive.</em> This book starts from that single idea and follows it down — into a system where an account can go negative, yet the whole of society's books always balance to exactly zero. From there, across fourteen chapters — production, work, the environment, public services, population, innovation, trust, daily life, governance, and the long arc of civilization — it traces what a world on that foundation would look like. Almost no equations. Just logic, and the plainest possible language, written for anyone.</p>
+    </div>
+  </section>
+
+  <section class="dl">
+    <div class="wrap">
+      <div class="meta">EPUB format · opens on any phone, tablet, or e-reader</div>
+      <a class="btn" href="https://github.com/HagenGao/benyuan-book-en/releases/latest/download/benyuan-english.epub">Download the book (EPUB)</a>
+      <div class="note">The book is free, and you're welcome to pass it on to anyone.</div>
+      <div class="ver">This link always points to the latest version. <a href="https://github.com/HagenGao/benyuan-book-en/releases" target="_blank" rel="noopener">See all versions and release notes →</a></div>
+    </div>
+  </section>
+
+  <section class="spread">
+    <div class="wrap">
+      <h2>📣 Sharing it</h2>
+      <p>If something in this book rings true to you, <strong>I'd be glad to have you tell others about it</strong> — reviews, explainers, threads, discussions, on any platform you like. Help carry the idea further.</p>
+      <p>Two small requests: first, <strong>credit the author (HagenGao) and the title</strong>; second, <strong>point readers back to this page to download</strong>, rather than re-hosting the file yourself. The reason is practical — the book is updated over time, and pulling it from one source is how everyone ends up with the current version.</p>
+      <p>Quote it, argue with it, take it apart. Just please don't rewrite or re-cut it and pass the altered version off as the original. To share the whole thing, send people here.</p>
+    </div>
+  </section>
+
+  <section class="thanks">
+    <div class="wrap">
+      <h2>🙏 For the earliest fellow travelers</h2>
+      <p>If you've read this far, and you're still willing to keep this book in mind and tell others about it — let me say one honest thing to you.</p>
+      <p>All I have to give right now is the book itself. I have nothing material to offer in return, and I'm still getting by on not much myself. But know that you are among the earliest to walk alongside this. The people who were willing to read it, trust it, and pass it on while almost no one had heard of it — those are the ones who matter most to me.</p>
+      <p>If one day this road truly opens up, I won't forget who walked it when it was still cold and quiet.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p class="lic">
+        <strong>License</strong><br/>
+        This work is released under Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0).<br/>
+        You may freely share it, in full, for non-commercial purposes, with attribution to the author (HagenGao) and the title. You may not sell it, and you may not distribute altered or excerpted versions. For commercial publication or authorized translation, please contact the author.
+      </p>
+      <p class="contact">
+        To talk, or to do something together, reach me here:<br/>
+        Email: <a href="mailto:fangzhou0930@gmail.com">fangzhou0930@gmail.com</a><br/>
+        Telegram: <a href="https://t.me/fangzhou0930" target="_blank" rel="noopener">@fangzhou0930</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
